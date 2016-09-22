@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[spanish]{babel}
+\author{José Luis Cánovas Sánchez}
+\title{Álgebra Conmutativa\\Tarea 1: Ejercicios 1-6 Tema 1}
+\begin{document}
+	\maketitle
+	
+	\section{Ejercicio 1}
+	
+	Demostrar la proposición 1.11:
+	
+	\par
+	
+	\textbf{Proposición 1.11:} \textit{Sea D un dominio. Se tiene:}
+	
+	\begin{enumerate}[(i)]
+		\item \textit{La relación x$\vert$y es transitiva y reflexiva.}
+		
+		Sean a,b,c,d $\in$ D tal que a$\vert$b con $ad=b$ y b$\vert$c con $be=c$. Sustituyendo b $ade=c$, llamando $f=d\cdot e$ queda $af=c$ por lo que a$\vert$c. La relación es \textbf{transitiva}.
+		
+		La relación es \textbf{reflexiva} pues según la notación de la definición 1.10 tomando $c=1$, a$\vert$a ya que $a\cdot1=a$.
+		
+		\item \textit{Si x$\vert$a y x$\vert$b, entonces x|a$\pm$b}
+		
+		Por $x\vert a$ $\exists c \in D$ tal que $xc=a$. Del mismo modo $\exists d \in D$ tal que $xd=b$.
+		
+		Si sumamos $xc=a$ y  $xd=b$ nos queda:
+		
+		  $xd + xd= a + b$ $\Rightarrow$ $x(c+d)=a+b$ $\Rightarrow$ $x\vert a+b$
+		  
+	    Si restamos $xc=a$ y  $xd=b$ nos queda:
+		  
+		  $xd - xd= a - b$ $\Rightarrow$ $x(c-d)=a-b$ $\Rightarrow$ $x\vert a-b$
+		
+	\end{enumerate}
+	
+	
+	\section{Ejercicio 2}
+	
+	Sea A un anillo, $B\subseteq A$ un subconjunto. Supóngase que las restricciones de las operaciones de A dan operaciones en B y que, con esas operaciones, B es un anillo. Mostrar que B es entonces un subanillo de A si y solo si $1 \in B$.
+	
+	$\Rightarrow$
+	
+	Supongamos B subanillo.
+	
+	Por $(ii)$ de la definición 1.5,se cumple que  $1 \in B$.
+	
+	\hfill
+	
+	$\Leftarrow$
+	
+	Supongamos  $1 \in B$.
+	
+	De manera inmediata tenemos $(ii)$ de la definición 1.5.
+	
+	Veamos si $a,\, b \in B \Rightarrow a - b \in B , \, ab \in B$
+	
+	Por B anillo, $1\in B$ y existe su simétrico $-1$. Además es cerrado para sumas y productos por lo que cumple $ab\in B$ y 
+	
+	 $b\cdot (-1) = -b \in B$  $\Rightarrow$
+	 
+	 $a + (-b) = a - b \in B$
+	
+	\hfill
+	
+	Como cumple $(i)$ y $(ii)$ de la definición 1.5, B es subanillo.
+	
+	
+	
+	
+	
+	\section{Ejercicio 3}
+	
+	Sea A un anillo no trivial. Probar:
+	
+	\begin{enumerate}[(i)]
+		\item Si $a\in A$, entonces $(a)=A$ si y solo si $a$ es unidad.
+		
+		
+		
+		\item Un ideal de A es propio si y solo si ninguno de sus elementos es una unidad.
+		
+		
+		
+		\item A es un cuerpo si y solo si tiene exactamente dos ideales.
+		
+		
+		
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	\section{Ejercicio 4}
+	
+	Demostrar la Proposición 2.10.
+	
+	\textbf{Proposición 2.10:} \textit{Sea $A$ un anillo no trivial y sea $C$ un conjunto no vacío de ideales de $A$. El conjunto intersección:}
+	\begin{gather*}
+		\cap C =\{ x\in A \, \vert \, x\in I \quad \forall I \in C \} 
+	\end{gather*}
+	 \textit{es un ideal de A.}
+	
+	
+	
+	
+	
+	\section{Ejercicio 5}
+	
+	Demostrar la Proposición 2.15.
+	
+	
+	\textbf{Proposición 2.15:} \textit{Sea A un anillo no trivial, I un ideal de A, S un subconjunto no vacío de A. El conjunto}
+	\begin{gather*}
+	\left( I \colon S \right) = \{ x\in A \, \vert \, xS \subseteq I \} 
+	\end{gather*}
+	\textit{ (donde $ xS = \{ xs \, \vert \, s \in S \} $)	es un ideal de A que contiene a I.}
+	
+	
+	
+	
+	
+	
+	
+	
+	\section{Ejercicio 6}
+	
+	Sean $A,\, B$ anillos, $f:A\rightarrow B$ una aplicación que cumple las condiciones $(i)$ y $(ii)$ de la Definición 2.1. Probar que $f$ es homomorfismo de anillos si y solo si $f(1)$ es una unidad del anillo $B$.
+	
+	
+	
+	
+	
+	
+	
+\end{document}
