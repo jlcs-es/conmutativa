@@ -83,14 +83,75 @@
 		\item Si $a\in A$, entonces $(a)=A$ si y solo si $a$ es unidad.
 		
 		
+		$\Rightarrow$
+		
+		Si $(a)=A$ el caso particular $1\in A = (a)$ y por la definición de ideal principal $(a) = \{ ax \, \vert \, x\in A \}$ entonces $\exists b \in A$ tal que $b\cdot a = 1 \in (a) = A$ por lo que $a$ es unidad.
+		
+		\hfill
+		
+		$\Leftarrow$
+		
+		Sea $a$ unidad. $\exists b \in A$ tal que $ab=1$.
+		
+		$(a) = \{ xa \, \vert \, x\in A \}$ y tomando $x=b$ $ba=1 \in (a)$
+	
+		$1 \in (a) \Rightarrow \forall x \in A \quad x\cdot 1 = x \in (a) \Rightarrow (a) = A$	
+		
+		\hfill
+		
 		
 		\item Un ideal de A es propio si y solo si ninguno de sus elementos es una unidad.
 		
+		$\Rightarrow$
+		
+		Sea $I \trianglelefteq A$ ideal cualquiera de A.
+		Supongamos  que $\exists a \in I$ unidad, i.e. $\exists b \in A$ con $ab=1$ $\Rightarrow 1\in I \Rightarrow  \forall x \in A \quad x\cdot 1 = x \in I \Rightarrow A = I $
+		
+		Por la equivalencia de $A \Rightarrow B$ $\equiv$ $\neg B \Rightarrow \neg A$, tenemos demostrada la implicación a la derecha.
+		
+		
+		
+		
+		\hfill
+		
+		
+		$\Leftarrow$
+		
+		Supongamos que $I \trianglelefteq A$ ideal impropio $I=A$. Como $1 \in A$ unidad ($1\cdot 1 = 1$), tenemos demostrada la implicación izquierda. 
+		
+		
+		
+		\hfill
 		
 		
 		\item A es un cuerpo si y solo si tiene exactamente dos ideales.
 		
+		$\Rightarrow$
 		
+		Por ser $A$ cuerpo, todo elemento no nulo $a\in A$ tiene inverso $b\in A$ tal que $ab=1$.
+		
+		Sea $I \trianglelefteq A$ un ideal cualquiera de $A$. Para toda unidad $a$,  $a \in I$, $ab \in I \Rightarrow 1 \in I \Rightarrow I=A$. Todo ideal con algún elemento no nulo es ideal impropio.
+		
+		Si $I$ no tiene unidades, como no puede ser vacío, sólo queda $0 \in I$, por lo que $I = (0)$ el ideal trivial.
+		
+		$A$ tiene exactamente dos ideales.
+		
+				
+		\hfill
+		
+		
+		$\Leftarrow$
+		
+		Si todo ideal no trivial es el impropio $I=A$. Tomamos un elemento arbitrario $a \in A$, de modo que su ideal principal será $(a) = A$.
+		
+		Suponemos por reducción al absurdo que $A$ no es un cuerpo.
+		
+		$\exists x \in A$ no nulo $\colon \forall y \in A \quad x\cdot y \neq 1$, i.e., no es unidad.
+		
+		Como todo ideal principal $(a) = A$, entonces $(x) = A$, pero $1 \in A$ y $1 \notin (x) = A$. Contradicción con la hipótesis de que $A$ no es cuerpo.
+		
+		
+		\hfill
 		
 		
 	\end{enumerate}
@@ -110,8 +171,19 @@
 	 \textit{es un ideal de A.}
 	
 	
+	\hfill
 	
+	Veamos los puntos $(i)$ y $(ii)$ de la definición 2.2 de ideal:
 	
+	$(i)$ $x,y\in \cap C \Rightarrow x+y \in \cap C$
+	
+	Si $x, y \in \cap C$, entonces $x, y \in I \quad \forall I \in C \Rightarrow x+y \in I$ por $I$ ideal $\forall I \in C \Rightarrow x+y \in \cap C $.
+	
+	\hfill
+	
+	$(ii)$ $x \in \cap C \quad a \in A \Rightarrow ax \in \cap C$
+	
+	Si $x \in \cap C$, entonces $x \in I \quad \forall I \in C \Rightarrow xa\in I$ por $I$ ideal $\forall I \in C \Rightarrow xa \in \cap C $
 	
 	\section{Ejercicio 5}
 	
@@ -125,6 +197,8 @@
 	\textit{ (donde $ xS = \{ xs \, \vert \, s \in S \} $)	es un ideal de A que contiene a I.}
 	
 	
+	\hfill
+	
 	
 	
 	
@@ -135,9 +209,18 @@
 	
 	Sean $A,\, B$ anillos, $f:A\rightarrow B$ una aplicación que cumple las condiciones $(i)$ y $(ii)$ de la Definición 2.1. Probar que $f$ es homomorfismo de anillos si y solo si $f(1)$ es una unidad del anillo $B$.
 	
+	\hfill
+	
+	$\Rightarrow$
 	
 	
+	\hfill
 	
+	
+	$\Leftarrow$
+	
+	
+	\hfill
 	
 	
 	
