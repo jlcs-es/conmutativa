@@ -199,10 +199,41 @@
 	
 	\hfill
 	
+	Veamos que es ideal:
+	
+	\hfill
+	
+	$(i)$ $a,b\in \left( I \colon S \right)  \Rightarrow a+b \in \left( I \colon S \right)$
+	
+	Por $a \in \left( I \colon S \right)$ se cumple $\forall s \in S \quad a\cdot s \in I$.
+	
+	Análogamente $\forall s \in S \quad b\cdot s \in I$.
+	
+	Sumamos: $as + bs \in I$ por ser elementos del ideal $I$.
+	
+	Por la propiedad distributiva $as+bs=(a+b)s \in I$ cumple la definición para el elemento $a+b \in \left( I \colon S \right).$
+	
+	\hfill
+	
+	$(ii)$ $a \in \left( I \colon S \right) \quad x \in A \Rightarrow ax \in \left( I \colon S \right)$
+	
+	Por $a \in \left( I \colon S \right)$ teníamos $\forall s \in S \quad a\cdot s \in I$.
+	
+	Por $I$ ideal $x\cdot as \in I \left( \forall s \in S  \right) \Rightarrow xa \in \left( I \colon S \right)$ por definición de $\left( I \colon S \right)$.
 	
 	
 	
+	\hfill
 	
+	Veamos ahora que $I \subseteq \left( I \colon S \right) $:
+	
+	Sea $x\in I $ arbitrario.
+	
+	$x s \in I \quad \forall s \in S $ por $ S \subseteq A $ e $I$ ideal.
+	
+	$x \in \left( I \colon S \right) \quad \forall x \in I$ por definición de $\left( I \colon S \right)$
+	
+	$I \subseteq \left( I \colon S \right) $
 	
 	
 	\section{Ejercicio 6}
@@ -213,11 +244,25 @@
 	
 	$\Rightarrow$
 	
+	Inmediata.
+	
+	Por $f$ homomosfismo cumple 2.1.$(iii)$: $f(1_A) = 1_B \in U\left( B \right)$
+	
 	
 	\hfill
 	
 	
 	$\Leftarrow$
+	
+	Sean $u,v\in U(B)$ tal que $uv=1_B$ y $f(1_A)=u$.
+	
+	 Si $f$ fuera homomorfismo de anillos debería cumplir $(ii)$ y $(iii)$, lo que  induce un homomorfismo de grupos multiplicativos $f \colon U(A) \rightarrow U(B)$, que en particular cumple $ f(u^{-1})=f(u)^{-1} \quad \forall u \in U(A)$
+	 
+	 $f(1) = f(1^{-1}) = f(1)^{-1} = u ^{-1} = v $
+	 
+	 $u = f(1) = v \Rightarrow U(B) = \{1_B\} \Rightarrow f(1_A) = 1_B$
+	 
+	 Hemos encontrado una restricción extra necesaria en $B$ para que $f$ pueda ser homomorfismo de anillos, todas sus unidades son iguales, por lo que serán el $1$. 
 	
 	
 	\hfill
