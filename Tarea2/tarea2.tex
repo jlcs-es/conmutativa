@@ -11,9 +11,191 @@
 \begin{document}
 	\maketitle
 	
-	\section{Ejercicio 7}
+	\section*{Ejercicio 7}
+	
+	$\mathcal{P} = \{ x_i  \quad i=1,2,... \quad primos \}  \subseteq \mathbb{Z} $
+	
+	$\mathbb{Z}_{\left( \mathcal{P} \right)}  = \{ q \in \mathbb{Q} \quad \vert \quad q = \frac{a}{b} \quad a, b \in \mathbb{Z}   \quad (b,x_i) = 1  \, \forall x_i \in \mathcal{P}  \}$
+	
+	¿$ \mathbb{Z}_{\left( \mathcal{P} \right)} $ subanillo de $\mathbb{Q}$? 
+	
+	¿$\mathbb{Z}_{\left( \emptyset \right)} $?,  ¿$\mathbb{Z}_{\left( \overline{\mathcal{P}} \right)} $?, donde $\overline{\mathcal{P}}$ es el conjunto de todos los primos.
+	
+	
+	\hfill
 	
 	
 	
+	
+	\section*{Ejercicio 8}
+	
+	Describir $\mathbb{Z}_{\left( \mathcal{P} \right)} $ cuando $\mathcal{P}$ está formado por un solo número primo $p$; y encontrar todos sus ideales.
+	
+	\hfill
+	
+	
+	\section*{Ejercicio 9}
+	
+	¿Existe algún anillo que tenga exactamente tres ideales?
+	
+	
+	\hfill
+	
+	
+	Sí, el anillo de los enteros $\mathbb{Z}_4 = \{0,\, 1,\, 2,\, 3\}$ (siendo $0,\, 1,\, 2,\, 3$ los representantes de las clases módulo 4).
+	
+	Los ideales posibles son:
+	
+	$(0) = \{0\} $
+	
+	$(1) = \mathbb{Z}_4 $
+	
+	$(2) = \{ 0,\, 2  \} $
+	
+	\hfil
+	
+	Cualquier otro ideal da lugar a uno de los anteriores:
+	
+	$(3) = \{ 0,\, 3,\, 2,\, 1 \} = (1) $
+	
+	$(\{0,\, 2 \}) = (2)$
+	
+	$(\{1,\, 2 \}) = (1)$
+	
+	$(\{2,\, 3 \}) = (1)$
+	
+	...
+	
+	
+	
+	\section*{Ejercicio 10}
+	
+	
+	Demostrar que todo subanillo de $\mathbb{Q} $ es igual a algún $ \mathbb{Z}_{\left( \mathcal{P} \right)} $.
+	
+	\hfill
+	
+	
+	
+	
+	\section*{Ejercicio 11}
+	
+	Demostrar que el conjunto de los ideales no nulos de un anillo tiene una estructura de monoide con el producto de ideales. Probar que si el anillo es un DIP, entonces el monoide es cancelativo.
+	
+	\hfill
+	
+	
+	Veamos que cumple la asociatividad y tiene elemento neutro (propiedades de ser un monoide):
+	
+	Sea $\mathcal{I}$ el conjunto de los ideales no nulos $I$ del anillo $A$. No vacío porque el ideal $(1) = A$ siempre existe.
+	
+	El producto se define como $ IJ = \left( \{ xy \vert x\in I \, y \in J \} \right)  $.
+	
+	Veamos que el ideal $(1) = A $ es el neutro: ¿ $I A = AI = I $ ?
+	
+	$ IA = \left( \{ xa \vert x\in I \, a \in A \} \right)  \Rightarrow  $ por $I$ ideal, y $A$ conmutativa por la suposición del inicio del capítulo, $ax = xa \in I$ $ \Rightarrow $ $ IA =  \left( \{ x \vert x\in I \} \right) \Rightarrow IA = AI = I$ .
+	
+	Sean $I$, $J$ y $K$ tres ideales de $A$.
+	
+	¿$(IJ)K = I(JK)$?
+	
+	$(IJ) =  \left( \{ xy \vert x\in I \, y \in J \} \right)  = $ [Prop. 2.11] $ = \{ \sum_j a_j x_j y_j \vert a_j \in A, \; x_j \in I, \; y_j \in J \}$
+	
+	$(IJ)K =  \left( \{ hz \vert h\in IJ \, z \in K \} \right) =  \{ \sum_j a_j x_j y_j z_j \vert a_j \in A, \; x_j \in I, \; y_j \in J, \; z_j \in K \} $ 
+	
+	Con la misma construcción para $I(JK)$ tenemos:
+	
+	$I(JK) =  \left( \{ xu \vert x\in I \, u \in JK \} \right) =  \{ \sum_j a_j x_j y_j z_j \vert a_j \in A, \; x_j \in I, \; y_j \in J, \; z_j \in K \} $ 
+	
+	$\Rightarrow (IJ)K = I(JK)$.
+	
+	\hfil
+	
+	Ahora el caso de que sea $A$ un DIP.
+	
+	Tomemos $I=(a)$, $J=(b)$, $K=(c)$ ideales principales de $A$, por hipótesis no nulos.
+	
+	¿$IJ=IK \Rightarrow J=K$?
+	
+	Sea $a_i \in A$:
+	
+	$IJ = (a)(b) = \sum_i a_i \cdot ab = \sum_i ai \cdot ac = IK$
+	
+	Sacando factor común las constantes $ab$ y $ac$:
+	
+	$ab(\sum a_i) = ac (\sum a_i)$
+	
+	Por la proposición 1.9 sobre $A$ DIP $\Rightarrow  b = c \Rightarrow (b) = (c) \Rightarrow J = K$.
+	
+	
+	
+	
+	
+	\section*{Ejercicio 12}
+	
+	Aplicar la Proposición 2.22 al anillo de los enteros.
+	
+	\hfill
+	
+	
+	Como $\mathbb{Z}$ es un DIP, podemos expresar los $I_i$ de la proposición como $(r_i)$ con cada $r_i \in \mathbb{Z}$
+	
+	La aplicación quedaría:
+	
+	$ \phi \colon \mathbb{Z} \rightarrow \frac{\mathbb{Z}}{(r_1)} \times \cdots \times \frac{\mathbb{Z}}{(r_n)} $
+	
+	
+	donde $ \phi \left( x  \right) = ( x+(r_1) ,\, x+(r_2), \ldots,\, x+(r_n) )  $
+	
+	
+	Llamando $ x_i $ a los valores tal que $ x \equiv x_i\, mod\, r_i$, nos queda:
+	
+	$ \phi \left( x  \right) = ( x_1, \ldots, x_n )  $
+	
+	\hfil 
+	
+	Si los ideales son primos dos a dos, veamos que siendo principales implica que los $r_i$ también son primos dos a dos:
+	
+	Si $(r_i)$ y $(r_j)$ son primos, $(1) = (r_i) + (r_j)$, por lo que existen $u, v \in \mathbb{Z} $ tal que $ ur_i + vr_j = 1$.
+	
+	Esta es la Identidad de Bezout e implica que $r_i$ y $r_j$ son coprimos: $(r_i, r_j) =1 $.
+	
+	
+	\hfil
+	
+	Además, el producto $\prod (r_i) = (r_1 \cdots r_n) = (N)$ con $N = r_1\cdots r_n$
+	
+	Tenemos por la proposición 2.22 que existe un isomorfismo 
+	
+	$\frac{\mathbb{Z}}{N} \cong  \frac{\mathbb{Z}}{(r_1)} \times \cdots \times \frac{\mathbb{Z}}{(r_n)}$
+	
+	\hfill 
+
+ 	En resumen, tenemos el Teorema Chino de los restos:
+ 	
+ 	\hfil 
+ 	
+ 	Supongamos que $n_1,\, n_2, …, n_k$
+ 	son enteros positivos coprimos dos a dos. Entonces, para enteros dados $a_1,\, a_2, …, a_k$, existe un
+ 	entero $x$ que resuelve el sistema de congruencias simultáneas
+ 	
+ 	\begin{align*}
+ 	x &\equiv a_1 \pmod{n_1} \\
+ 	x &\equiv a_2 \pmod{n_2} \\
+ 	&\vdots \\
+ 	x &\equiv a_k \pmod{n_k}
+ 	\end{align*}
+ 	
+ 	Más aún, todas las soluciones $x$ de este sistema son congruentes módulo el
+ 	producto $N = n_1 n_2 ... n_k$.
+ 	 	
+ 	En lenguaje algebraico es que para cada entero positivo con factorización en números primos:
+ 	
+ 	$n = p_1^{r_1}\cdots p_k^{r_k}$
+ 	
+ 	se tiene un isomorfismo entre un anillo y la suma directa de sus potencias primas:
+ 	
+	$\mathbf{Z}/n\mathbf{Z} \cong \mathbf{Z}/p_1^{r_1}\mathbf{Z} \oplus \cdots \oplus \mathbf{Z}/p_k^{r_k}\mathbf{Z}$
+ 	
 	
 \end{document}
