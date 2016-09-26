@@ -24,7 +24,33 @@
 	
 	\hfill
 	
+	Comprobemos la definición 1.5 de subanillo:
 	
+	$(ii)$ $1\in \mathcal{P}$ 
+	
+	Como el 1 es coprimo con todos los enteros, $(1, x_i) = 1 \quad \forall x_i \in \mathcal{P}$, tomamos en la representación del racional $q=\frac{a}{b}$ $a=1$ y $b=1$, $q=1\in \mathcal{P}$.
+
+	\hfil
+	
+	$(i)$ $u, v\in \mathbb{Z}_{\left( \mathcal{P} \right)} \Rightarrow u-v \in \mathbb{Z}_{\left( \mathcal{P} \right)} , \quad  uv \in \mathbb{Z}_{\left( \mathcal{P} \right)} $
+	
+	Sean $u=\frac{n}{d}$ y $v=\frac{m}{e}$ con $(d,x)=1$ y $(e,x)=1$ $\forall x \in \mathcal{P}$.
+	
+	$u-v = \frac{n}{d} - \frac{m}{e} = \frac{ne - md}{de}$
+	
+	$uv = \frac{n}{d}  \frac{m}{e} = \frac{nm}{de}$
+	
+	Y como $(de, x) = 1 \quad \forall x \in \mathcal{P}$, $u,v\in \mathbb{Z}_{\left( \mathcal{P} \right)} $.
+	
+	
+	\hfill
+	
+	En el caso $\mathbb{Z}_{\left( \emptyset \right)}$, como no hay elementos en el conjunto $\mathcal{P}$ no hay denominadores posibles que sean coprimos con ellos, ni siquiera el 1, por tanto $\mathbb{Z}_{\left( \emptyset \right)} = \emptyset$.
+	
+	
+	\hfill
+	
+	Sin embargo, $\mathbb{Z}_{\left( \overline{\mathcal{P}} \right)} $ tiene la propiedad que un denomidador $d$ entero, como se puede factorizar de manera única en producto de primos ($\mathbb{Z}$ es DFU), siempre será múltiplo de alguno, incluso si $d$ es primo, ocurrirá $(d,d)=d$ por $d\in \overline{\mathcal{P}}$. Por tanto el único denominador coprimo con todos los elementos de $\overline{\mathcal{P}}$ es el 1, y por tanto $\mathbb{Z}_{\left( \overline{\mathcal{P}} \right)} = \mathbb{Z}$.
 	
 	
 	\section*{Ejercicio 8}
@@ -34,6 +60,16 @@
 	\hfill
 	
 	
+	Los elementos de $\mathbb{Q}$ cuyo denomidador no es múltiplo de $p$. Además tenemos en cuenta que $\mathbb{Z} \subset \mathbb{Z}_{(\mathcal{P})}$:
+	
+	$ \mathbb{Z} \bigcup \left( \mathbb{Q} \smallsetminus \left( \frac{1}{p} \right) \right) $ 
+	
+	
+	\hfill
+	
+	Los ideales serán el nulo $(0)$, el trivial $\mathbb{Z}_{\left( \mathcal{P} \right)} $ y un ideal propio sólo podrá estar generado por elementos no unidades (por ejercicio3.ii). El primo $p$ es el único elemento sin inverso, y por tanto el único ideal propio es el $(p)$.
+	
+	
 	\section*{Ejercicio 9}
 	
 	¿Existe algún anillo que tenga exactamente tres ideales?
@@ -41,8 +77,14 @@
 	
 	\hfill
 	
+	El del ejercicio 8.
 	
-	Sí, el anillo de los enteros $\mathbb{Z}_4 = \{0,\, 1,\, 2,\, 3\}$ (siendo $0,\, 1,\, 2,\, 3$ los representantes de las clases módulo 4).
+	\hfill
+	
+	
+	Otro ejemplo lo sacamos pensando en que no puede ser un cuerpo (ejercicio 3.a) y que por simplicidad sea finito, acabamos pensando en los anillos de enteros módulo un número \textbf{no} primo.
+	
+	Por ejemplo, el anillo de los enteros $\mathbb{Z}_4 = \{0,\, 1,\, 2,\, 3\}$ (siendo $0,\, 1,\, 2,\, 3$ los representantes de las clases módulo 4).
 	
 	Los ideales posibles son:
 	
@@ -75,12 +117,38 @@
 	
 	\hfill
 	
+	Sea $\mathcal{Z}$ el conjunto de todos los $ \mathbb{Z}_{\left( \mathcal{P} \right)} $.
+	
+	Sea $\mathcal{S}$ el conjunto de todos los subanillos de $\mathbb{Q}$.
+	
+	\hfill
+	
+	$\mathcal{S} \supseteq \mathcal{Z}$
+	
+	Por el ejercicio 7, todo  $ \mathbb{Z}_{\left( \mathcal{P} \right)} $ es subanillo.
+	
+	
+	
+	
+	\hfill
+	
+	$\mathcal{S} \subseteq \mathcal{Z}$
+	
+	Sea $S \in \mathcal{S}$ un subanillo de $\mathbb{Q}$.
+	
+	Sean $q, t \in S \subset \mathbb{Q}$, con representantes en $\mathbb{Q}$ $q= \frac{a}{b}$ y $t = \frac{c}{d}$, que cumplen $(a,b)=1$ y $(c,d)=1$.
+	
+	Por $S$ subanillo, $q-t\in S$ y $qt\in S$, y aplicando ambas operaciones hemos visto en Ej.7 que los denominadores son en ambos casos $b \cdot d$.
+	
+	Si descomponemos todos los denominadores que no son 1 de los elementos de $S$ en producto de primos ($\mathbb{Z}$ DFU), y tomamos su intersección, tenemos un conjunto $\mathcal{P}$ de primos donde todos los denominadores de $S$ son coprimos con todos los elementos de $\mathcal{P}$.
+	
+	
 	
 	
 	
 	\section*{Ejercicio 11}
 	
-	Demostrar que el conjunto de los ideales no nulos de un anillo tiene una estructura de monoide con el producto de ideales. Probar que si el anillo es un DIP, entonces el monoide es cancelativo.
+	Demostrar que el conjunto de los ideales no nulos de un dominio tiene una estructura de monoide con el producto de ideales. Probar que si el anillo es un DIP, entonces el monoide es cancelativo.
 	
 	\hfill
 	
@@ -119,13 +187,10 @@
 	
 	Sea $a_i \in A$:
 	
-	$IJ = (a)(b) = \sum_i a_i \cdot ab = \sum_i ai \cdot ac = IK$
+	$IJ = (a)(b) = \left\langle  \sum_i a_i \cdot ab \right\rangle = \left\langle  \sum_i ai \cdot ac \right\rangle  = IK$
 	
-	Sacando factor común las constantes $ab$ y $ac$:
+	Como los $a_i\cdot a \in A$, podemos considerar los mismos conjuntos generados pero en vez de por $ab$ y $ac$, por $b$ y $c$, lo que nos da que los ideales son los mismos y $J=K$, que es la condición de ser cancelativo.
 	
-	$ab(\sum a_i) = ac (\sum a_i)$
-	
-	Por la proposición 1.9 sobre $A$ DIP $\Rightarrow  b = c \Rightarrow (b) = (c) \Rightarrow J = K$.
 	
 	
 	
